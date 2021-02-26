@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { span } from 'react-bootstrap';
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -36,6 +36,7 @@ class App extends Component {
         <div className="jumbotron">
           <h1 className="display-4">Users of reqres! Join Us!</h1>
         </div>
+        
         <div className="users">
           {users.map((user) => (
             <div className="card" key={user.id}>
