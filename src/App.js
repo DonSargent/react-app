@@ -34,7 +34,7 @@ class App extends Component {
     return (
       <div className="container">
         <div className="jumbotron">
-          <h1 className="display-4">Users list:</h1>
+          <h1 className="display-4">Users of reqres! Join Us!</h1>
         </div>
         <div className="users">
           {users.map((user) => (
