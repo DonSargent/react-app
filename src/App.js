@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+import NavigationContainer from "./navigation/navigation-container";
+import About from "./pages/about";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -33,6 +36,19 @@ class App extends Component {
 
     return (
       <div className="container">
+        
+        <Router>
+          <div>
+            <NavigationContainer />
+
+            <Switch>
+              <Route exact path="/" component={App} />
+              <Route path="/about" componet={About} />
+            </Switch>
+
+          </div>
+        </Router>
+
         <div className="jumbotron">
           <h1 className="display-4">Users of reqres! Join Us!</h1>
         </div>
